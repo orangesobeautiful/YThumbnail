@@ -40,11 +40,11 @@ Youtube 的封面可以透過
  xxx.jpg 可以透過 Youtube API 找到想要的尺寸類型
 
 提供一些封面格式範例:  
- Size |xxx.jpg
--------------|-------
-1280 X 720 |maxresdefault.jpg
-640 x 480 |sddefault.jpg
-480 x 360 |hqdefault.jpg
+| Size |xxx.jpg |
+|-----------|-----------------|
+|1280 X 720 |maxresdefault.jpg|
+|640 x 480 |sddefault.jpg |
+|480 x 360 |hqdefault.jpg |
 
 ## 我想自己架設
 
