@@ -6,7 +6,7 @@ const routes = [
       {
         path: "",
         name: "index",
-        component: () => import("pages/Index.vue"),
+        component: () => import("pages/IndexPage.vue"),
         alias: "/watch",
       },
     ],
@@ -16,7 +16,7 @@ const routes = [
   // but you can also remove it
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/Error404.vue"),
+    component: () => import("pages/ErrorNotFound.vue"),
   },
 ];
 

@@ -25,12 +25,7 @@
               <q-btn
                 :href="img.url"
                 target="_blank"
-                class="
-                  all-pointer-events
-                  img-btn
-                  bg-amber-13
-                  text-body1 text-weight-medium text-black
-                "
+                class="all-pointer-events img-btn bg-amber-13 text-body1 text-weight-medium text-black"
                 @click="ImgNewTag(img.url)"
                 @mousedown.middle="ImgNewTag(img.url)"
                 >原圖</q-btn

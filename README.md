@@ -1,45 +1,45 @@
 # YThumbnail
 
-Youtube 影片封面、縮圖查詢  
+Youtube 影片封面、縮圖查詢
 這個網頁只是方便查詢而已，沒甚麼技術成分，想要手動獲取封面的可以參考 [如何做到的](#如何做到的)
 
 ## 如何使用
 
 - 查詢封面方法
 
-  - 方法 1：  
+  - 方法 1：
     在搜尋框中輸入 Youtube 影片網址
 
-  * 方法 2：  
+  * 方法 2：
     在網站 URL 後面接上 Youtube 影片網址的路徑和參數
 
-    例如:  
-    某個影片網址為 `https://www.youtube.com/watch?v=videoID`  
-    查詢搜圖網站的網址為 `https://www.example.com/`  
+    例如:
+    某個影片網址為 `https://www.youtube.com/watch?v=videoID`
+    查詢搜圖網站的網址為 `https://www.example.com/`
     此時可以直接透過連結 `https://www.example.com/watch?v=videoID` 查詢影片封面
 
-  - 方法 2 進階(有域名限制)：  
-    如果查詢網站可以透過 `https://www.youtube.domain.com/` 連線 (domain 為查詢網站的域名)  
+  - 方法 2 進階(有域名限制)：
+    如果查詢網站可以透過 `https://www.youtube.domain.com/` 連線 (domain 為查詢網站的域名)
     在 Youtube 影片頁面直接在網址列的 youtube 和 .com 中間加上 .domain 便可以查詢影片封面
 
-    例如:  
-    查詢網站(示範網站) `https://www.youtube.owo9.com/` (domain = owo9)  
-    影片網址為 `https://www.youtube.com/watch?v=videoID`  
+    例如:
+    查詢網站(示範網站) `https://www.youtube.owo9.com/` (domain = owo9)
+    影片網址為 `https://www.youtube.com/watch?v=videoID`
     那麼突然好奇某個影片的封面時，只要在網址列的 youtube 和 .com 間打上 .owo9 便可直接查詢影片封面
 
-* 下載圖片方法  
+* 下載圖片方法
   對圖片右鍵 > 圖片另存新檔
 
 ## 如何做到的
 
-Youtube 的封面可以透過  
- `https://i.ytimg.com/vi/videoID/xxx.jpg`  
- 或  
- `https://img.youtube.com/vi/videoID/xxx.jpg`  
- videoID 可以透過影片網址 watch?v= 後面的值取得  
- xxx.jpg 可以透過 Youtube API 找到想要的尺寸類型
+Youtube 的封面可以透過
+`https://i.ytimg.com/vi/videoID/xxx.jpg`
+或
+`https://img.youtube.com/vi/videoID/xxx.jpg`
+videoID 可以透過影片網址 watch?v= 後面的值取得
+xxx.jpg 可以透過 Youtube API 找到想要的尺寸類型
 
-提供一些封面格式範例:  
+提供一些封面格式範例:
 | Size |xxx.jpg |
 |-----------|-----------------|
 |1280 X 720 |maxresdefault.jpg|
@@ -60,7 +60,7 @@ wget https://github.com/orangesobeautiful/YThumbnail/releases/download/0.1.0/YTh
 tar xzf YThumbnail*.tar.gz
 ```
 
-此時目錄下應該可以看到 YThumbnail-x.x.x 的資料夾  
+此時目錄下應該可以看到 YThumbnail-x.x.x 的資料夾
 再把網頁伺服器的根目錄導向包含資料夾的路徑即可，以 nginx 為例(沒寫得很完整，參考形式就好)
 
 ```nginx
@@ -110,7 +110,7 @@ yarn run lint
 
 ### Build the app for production
 
-參考 https://quasar.dev/quasar-cli/build-commands
+參考 https://quasar.dev/quasar-cli-vite/commands-list#build
 
 ```bash
 quasar build
@@ -118,4 +118,4 @@ quasar build
 
 ### 客製化設定
 
-參考 [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+參考 [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
